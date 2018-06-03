@@ -1,42 +1,28 @@
+<!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
-    <script src="liquidFillGauge.js" language="JavaScript"></script>
-    <style>
-        .liquidFillGaugeText { font-family: Helvetica; font-weight: bold; }
-    </style>
+    <link rel="stylesheet" href="Style.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8" language="JavaScript"></script>
+
+
+
 </head>
 
-<body>
-<svg id="fillgauge3" width="19%" height="200" onclick="gauge3.update(NewValue());"></svg>
-
-<script language="JavaScript">
-    var config = liquidFillGaugeDefaultSettings();
-
-    var gauge3 = loadLiquidFillGauge("fillgauge3", 0, null);
-
-    config3.textVertPosition = 0.8;
-    config3.waveAnimateTime = 5000;
-    config3.waveHeight = 0.15;
-    config3.waveAnimate = false;
-    config3.waveOffset = 0.25;
-    config3.valueCountUp = false;
-    config3.displayPercent = false;
-
-    function NewValue(){
-        return 90;
-       /* if(Math.random() > .5){
-            return Math.round(Math.random()*100);
-        } else {
-            return (Math.random()*100).toFixed(1);
-        }*/
-    }
+<body background="beerbackground.jpg" >
 
 
 
-</script>
+<div class="h2" style="margin-left: 625px;"> Welcome beer lovers! </div>
 
-</body>
-</html>
+<div class="h3" style="margin-left: 550px;"> <p> Have you ever wondered if the process of making beer  <br> was as easy as drinking it?
+    <br> <br>
+
+    Click the button below to find out! </p>
+
+</div>
+
+<div style="margin-top: 30px; margin-left: 890px;">
+    <button class="button"><a href="Malting.html"> Start! </a> </button>
+</div>
